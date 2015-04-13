@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="FaceRecognize.exe"/>
+    <OBJFILES value="FaceRecognize.obj Kode1.obj About.obj EditBaza.obj"/>
+    <RESFILES value="FaceRecognize.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Kode1.dfm About.dfm EditBaza.dfm"/>
+    <LIBFILES value="lib\cv.lib lib\cvaux.lib lib\cvcam.lib lib\cvhaartraining.lib 
+      lib\cxcore.lib lib\cxts.lib lib\highgui.lib lib\ml.lib lib\videoInput.lib"/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib vcldb.lib ibxpress.lib cds.lib dsnap.lib 
+      dbexpress.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi 
+      bcb2kaxserver.bpi bcbie.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="FaceRecognize.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Nick\Мои документы\Face Recognize&quot;;$(BCB)\include;$(BCB)\include\vcl;C:\OpenCV\cv\include;C:\OpenCV\cvaux\include;C:\OpenCV\cxcore\include;C:\OpenCV\ml\include;C:\OpenCV\otherlibs\_graphics\include;C:\OpenCV\otherlibs\cvcam\include;C:\OpenCV\otherlibs\highgui"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Nick\Мои документы\Face Recognize&quot;;$(BCB)\lib\obj;$(BCB)\lib;&quot;C:\Documents and Settings\Nick\Мои документы\Face Recognize\lib&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I&quot;C:\Documents and Settings\Nick\Мои документы\Face Recognize&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -IC:\OpenCV\cv\include 
+      -IC:\OpenCV\cvaux\include -IC:\OpenCV\cxcore\include 
+      -IC:\OpenCV\ml\include -IC:\OpenCV\otherlibs\_graphics\include 
+      -IC:\OpenCV\otherlibs\cvcam\include -IC:\OpenCV\otherlibs\highgui 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -VF -X- -r- -a8 -b- -k -y -v -vi- 
+      -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="FaceRecognize.res" FORMNAME="" UNITNAME="FaceRecognize.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FaceRecognize.cpp" FORMNAME="" UNITNAME="FaceRecognize" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Kode1.cpp" FORMNAME="Main" UNITNAME="Kode1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\cv.lib" FORMNAME="" UNITNAME="cv.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\cvaux.lib" FORMNAME="" UNITNAME="cvaux.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\cvcam.lib" FORMNAME="" UNITNAME="cvcam.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\cvhaartraining.lib" FORMNAME="" UNITNAME="cvhaartraining.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\cxcore.lib" FORMNAME="" UNITNAME="cxcore.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\cxts.lib" FORMNAME="" UNITNAME="cxts.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\highgui.lib" FORMNAME="" UNITNAME="highgui.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\ml.lib" FORMNAME="" UNITNAME="ml.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\videoInput.lib" FORMNAME="" UNITNAME="videoInput.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About.cpp" FORMNAME="AboutBox" UNITNAME="About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EditBaza.cpp" FORMNAME="EditDB" UNITNAME="EditBaza" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Nick\Мои документы\Face Recognize;$(BCB)\include;$(BCB)\include\vcl;C:\OpenCV\cv\include;C:\OpenCV\cvaux\include;C:\OpenCV\cxcore\include;C:\OpenCV\ml\include;C:\OpenCV\otherlibs\_graphics\include;C:\OpenCV\otherlibs\cvcam\include;C:\OpenCV\otherlibs\highgui
+Item1=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Nick\Мои документы\Face Recognize;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Nick\Мои документы\Face Recognize;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Nick\Мои документы\Face Recognize\lib
+Item1=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Nick\Мои документы\Face Recognize;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
